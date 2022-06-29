@@ -1,1 +1,20 @@
-alexanderlerch.github.io
+remote_theme: samarsault/texture
+
+texture:
+  title: alexander lerch
+  tagline: audio content analysis and music information retrieval
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    github:  alexanderlerch
+    linkedIn: in/lerch
+    
+
+domain: "alexanderlerch.github.io"
+baseurl: ""
+
+author:
+  name: alexander lerch
+  url: http://www.alexanderlerch.com/
+
+
