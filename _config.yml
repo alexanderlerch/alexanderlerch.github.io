@@ -1,13 +1,27 @@
-remote_theme: samarsault/texture
+title: Texture Theme
+author: GitHub User
+email: your-email@domain.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  personal blog
+show_excerpts: true # set to true to show excerpts on the homepage
+
+sass:
+  sass_dir: _sass
+
+permalink: /posts/:title/
 
 texture:
   title: alexander lerch
   tagline: audio content analysis and music information retrieval
   date_format: "%b %-d, %Y"
+  style: blue
+  showNav: false
+  showPicker: false
 
   social_links:
     github:  alexanderlerch
     linkedIn: in/lerch
+    rss: rss
     
 
 domain: "alexanderlerch.github.io"
@@ -16,5 +30,8 @@ baseurl: ""
 author:
   name: alexander lerch
   url: http://www.alexanderlerch.com/
+
+plugins:
+  - jekyll-seo-tag
 
 
