@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "special journal issue finalized"
-description: Electronics: "Machine Learning applied to Music/Audio Signal Processing"
+description: "Electronics: Machine Learning applied to Music/Audio Signal Processing"
 date:   2021-12-10 21:03:36 +0530
 categories: publication
 ---

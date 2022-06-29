@@ -7,4 +7,5 @@ categories: talk
 ---
 ![texture theme preview](img/SOMI.jpg)
 
+![SOMI screenshot](img/SOMI.jpg)
 It was a great pleasure to give an invited talk about controllable music generation and latent space disentanglement at the [Summit on Music Intelligence (SOMI)](https://somi-ccom.com/).
