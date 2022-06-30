@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{%- include head.html -%}
+</head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
+<bibtex src="/bib/lerch.bib"></bibtex>
+<body>
+	<header class="texture-{{ site.texture.style }}">
+		<div class="container">
+			{%- include nav.html -%}
+		</div>
+		{%- include page_header.html -%}	
+	</header>
+	<main>
+		<div class="container">
+			<div id="bibtex_display"></div>
+		</div>
+	</main>
+	{%- include footer.html -%}
+</body>
+</html>

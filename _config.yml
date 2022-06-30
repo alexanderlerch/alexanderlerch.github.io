@@ -12,11 +12,14 @@ permalink: /posts/:title/
 
 texture:
   title: alexander lerch
-  tagline: audio content analysis and music information retrieval
+  tagline: audio content analysis
   date_format: "%b %-d, %Y"
   style: blue
-  showNav: false
+  showNav: true
   showPicker: false
+  navigation:
+    - title: publications
+      url: "/publications"  
 
   social_links:
     github:  alexanderlerch
