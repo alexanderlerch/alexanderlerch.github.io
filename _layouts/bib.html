@@ -6,9 +6,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
 	<bibtex src="/bib/lerch.bib"></bibtex>
+
+    <script>
+		$(function() {
+		  $("#Fontselector").on("change",function() {
+		    var font = $("#Fontselector option:selected").text();
+		    console.log(font);
+		
+		    $('.title.fonters').each(function() {
+		    	$(this).css("font-family",font);
+		    });
+		  }); 
+		});   
+		function reset() {
+			$("select").each(function () {
+			  localStorage.setItem($(this).attr("id"),"");
+			  $(this).val("");
+			}); 
+			$("#searchbar").val("");
+			$("#searchbar").trigger('change');
+		}
+    </script>
     <style>
-    bibtex { display: none; }
-    #bibtex_errors { margin-top:10px; color: red;}
+		bibtex { display: none; }
+		#bibtex_errors { margin-top:10px; color: red;}
+		h1.header {margin-left:8px;}
+		h1.YEAR { font-size: 1.5rem; font-weight: bold; display: inline; margin-left:8px;}
     </style>
 </head>
 <body>
@@ -74,5 +97,8 @@
 		</div>
 	</main>
 	{%- include footer.html -%}
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </body>
 </html>
