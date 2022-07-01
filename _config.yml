@@ -18,8 +18,12 @@ texture:
   showNav: true
   showPicker: false
   navigation:
+    - title: home
+      url: ""  
     - title: publications
       url: "/publications"  
+    - title: about
+      url: "/about"  
 
   social_links:
     github:  alexanderlerch
