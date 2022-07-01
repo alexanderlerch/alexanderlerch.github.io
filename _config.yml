@@ -19,7 +19,7 @@ texture:
   showPicker: false
   navigation:
     - title: home
-      url: ""  
+      url: "/"  
     - title: publications
       url: "/publications"  
     - title: about

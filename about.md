@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 
 <img align="left" style="float: left; margin-left: 0px; margin-right: 10px;" src="/img/lerch.png" alt="photo of alexander lerch" width="180"/>
