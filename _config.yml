@@ -22,6 +22,8 @@ texture:
       url: "/"  
     - title: publications
       url: "/publications"  
+    - title: photos
+      url: "/photos"  
     - title: about
       url: "/about"  
 
