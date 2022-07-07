@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{%- include head.html -%}
+</head>
+<body>
+	<header class="texture-{{ site.texture.style }}">
+		<div class="container">
+			{%- include nav.html -%}
+		</div>
+		{%- include page_header.html -%}	
+	</header>
+	<main>
+		<div class="container">
+			{{ content }}
+			<a data-flickr-embed="true" href="https://www.flickr.com/photos/alexanderlerch/albums/72157692533134475" title="likes"><img src="https://live.staticflickr.com/4564/38147835606_55dc8cd103_z.jpg" width="640" height="480" alt="likes"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		</div>
+	</main>
+	{%- include footer.html -%}
+</body>
+</html>
