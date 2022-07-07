@@ -15,27 +15,28 @@
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 	</header>
 	<main>
-		{{ content }}
-		
-		<div ID="examples" data-nanogallery2='{
-			"flickrAPIKey": "1c4468db66e4e972a7768432eded7c66",
-			"userID": "124056958@N03",
-			"kind": "flickr",
-			"photoset": "72157692533134475",
-			"thumbnailWidth": "300",
-			"thumbnailHeight": "300",
-			"thumbnailGutterWidth": 4,
-			"thumbnailGutterHeight": 4,
-			"thumbnailHoverEffect2":"image_grayscale_40%_0%_400",
-			"thumbnailAlignment": "center",
-			"thumbnailLabel": {
-			  "position": "overImageOnBottom",
-			  "display": false
-			},
-			"thumbnailOpenImage": true
-		  }'>
+		<div class="container">
+			{{ content }}
+			
+			<div ID="examples" data-nanogallery2='{
+				"flickrAPIKey": "1c4468db66e4e972a7768432eded7c66",
+				"userID": "124056958@N03",
+				"kind": "flickr",
+				"photoset": "72157692533134475",
+				"thumbnailWidth": "300",
+				"thumbnailHeight": "300",
+				"thumbnailGutterWidth": 4,
+				"thumbnailGutterHeight": 4,
+				"thumbnailHoverEffect2":"image_grayscale_40%_0%_400",
+				"thumbnailAlignment": "center",
+				"thumbnailLabel": {
+				  "position": "overImageOnBottom",
+				  "display": false
+				},
+				"thumbnailOpenImage": true
+			  }'>
 
-    </div>
+			</div>
 		</div>
 	</main>
 	{%- include footer.html -%}
