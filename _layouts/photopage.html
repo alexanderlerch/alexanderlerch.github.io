@@ -9,11 +9,26 @@
 			{%- include nav.html -%}
 		</div>
 		{%- include page_header.html -%}	
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+		<link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 	</header>
 	<main>
-		<div class="container">
-			{{ content }}
-			<iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157692533134475&sort=0&by=album&theme=tiles_justified&scale=fill&speed=3000&limit=100&skin=default&autoplay=true" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p><a  href="https://www.foned.co.uk/sim-only-deals">Sim Only</a></p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+		<div ID="examples" data-nanogallery2='{
+			"flickrAPIKey": "1c4468db66e4e972a7768432eded7c66",
+			"userID": "124056958@N03",
+			"kind": "flickr",
+			"photoset": "72157692533134475",
+			"thumbnailWidth": "200",
+			"thumbnailLabel": {
+			  "position": "overImageOnBottom"
+			},
+			"thumbnailAlignment": "center",
+			"thumbnailOpenImage": true
+		  }'>
+
+    </div>
 		</div>
 	</main>
 	{%- include footer.html -%}
