@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "libACA: C++ for audio analysis"
-description: New reference implementations for audio content analysis algorithms
+description: new reference implementations for audio content analysis algorithms
 date:   2022-06-19 21:03:36 +0530
 categories: code
 ---

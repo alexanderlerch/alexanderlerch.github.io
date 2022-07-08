@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "pyACA: audio analysis code package updated"
+description: new reference implementations for audio content analysis algorithms
+date:   2022-03-26 21:03:36 +0530
+categories: code
+---
+After a long time, I am happy to announce an update to my [pyACA package](https://pypi.org/project/pyACA).
+
+Finally, the python content matches the Matlab code accompanying my [book on audio content analysis](https://www.audiocontentanalysis.org). However, most of the changes are under the hood: code clean-up, automated tests and automated packaging with github actions. Huge thanks to [Kaushal Sali](https://github.com/kaushalsali) for his help!
+
+Check out the [code repo](https://github.com/alexanderlerch/pyACA) to learn more! I look forward to any feedback you might have.
+
+
+All implementations are also available in:
+* [Matlab: ACA-Code](https://github.com/alexanderlerch/ACA-Code)
+* [C++: libACA](https://github.com/alexanderlerch/libACA)

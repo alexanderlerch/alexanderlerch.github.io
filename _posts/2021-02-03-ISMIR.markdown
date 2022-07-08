@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "ISMIR2021"
+description: chairing the International Society for Music Information Retrieval Conference 2021
+date:   2021-02-03 21:03:36 +0530
+categories: conference
+---
+I am excited that I will be co-chairing the 22nd ISMIR 2021 (International Society for Music Information Retrieval Conference) with Jin Ha Lee. Mark your calendars for this online-only conference for Nov 8-12. Info will be added at [ismir2021.ismir.net](https://ismir2021.ismir.net).
