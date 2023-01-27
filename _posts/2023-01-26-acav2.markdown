@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "An Introduction to ACA: Second Edition"
-description: talk on controllable music generation
+title:  "An Intro to ACA: 2nd Edition"
+description: book release
 date:   2023-01-26 23:03:36 +0530
 categories: publication
 ---
