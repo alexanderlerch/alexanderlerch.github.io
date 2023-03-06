@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "talk @CSIP seminar (GT)"
+description: talk on audio classification with insufficient data
+date:   2023-03-03 15:00:00 -0500
+categories: talk
+---
+![CSIP title](/img/2023-CSIP.png)
+
+Find the slides of a presentation I gave at the [CSIP Seminar](https://www.gatech.edu/event/2023/02/24/csip-seminar-audio-classification-small-training-datasets) on audio classification with small training sets [here](https://musicinformatics.gatech.edu/wp-content_nondefault/uploads/2023/03/2023-CSIP.pdf).
