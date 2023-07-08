@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "The Sound of AI Mentor Talk"
+description: talk on academia and entrepreneurship
+date:   2023-06-14 09:00:00 -0500
+categories: talk
+---
+It was a pleasure to share my thoughts on entrepreneurship and academia with the [Sound of AI Accelerator](https://thesoundofai.com/accelerator.html) participants. Check out the slide repo [here](https://github.com/alexanderlerch/2023-slides-SoAI-Accelerator).
