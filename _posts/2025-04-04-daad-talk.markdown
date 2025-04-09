@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "panel on creative expression at DAAD New York"
+description: presentation on music ai
+date:   2025-04-04 21:03:36 +0530
+categories: talk
+---
+![DAAD slides](/img/20250404-cover.png)
+
+It was a great honor to be invited for the celebration of the 100 year anniversary of the DAAD, the [German Academic Exchange Service](https://www.daad.org/). I had the pleasure to participate in a panel on "The Futures of Creative Expression" and discuss artificial intelligence in the music field. 
