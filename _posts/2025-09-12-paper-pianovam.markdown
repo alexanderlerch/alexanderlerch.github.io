@@ -11,4 +11,4 @@ In a study presented at the International Society for Music Information Retrieva
 
 Shoutout to my student Yonghyun Kim and the great team at KAIST: Junhyung Park, Joonhyung Bae, Kirak Kim, Taegyun Kwon, and Juhan Nam. The paper is available [online](https://arxiv.org/abs/2509.08800).
 
-The [Music Informatics Group](https://musicinformatics.gatech.edu) is in the [Georgia Tech School of Music](https://music.gatech.edu], [Georgia Tech College of Design](https://design.gatech.edu).
+The [Music Informatics Group](https://musicinformatics.gatech.edu) is in the [Georgia Tech School of Music](https://music.gatech.edu), [Georgia Tech College of Design](https://design.gatech.edu).

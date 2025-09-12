@@ -12,4 +12,4 @@ While the estimation of model uncertainty is a relatively widely investigated ar
 
 Shoutout to my students Karn Watcharasupat, Yiwei Ding, Aleksandra (Teng) Ma, Pavan Seshadri. The paper is available [online](https://link.springer.com/chapter/10.1007/978-3-031-88711-6_14).
 
-The [Music Informatics Group](https://musicinformatics.gatech.edu) is in the [Georgia Tech School of Music](https://music.gatech.edu], [Georgia Tech College of Design](https://design.gatech.edu).
+The [Music Informatics Group](https://musicinformatics.gatech.edu) is in the [Georgia Tech School of Music](https://music.gatech.edu), [Georgia Tech College of Design](https://design.gatech.edu).
