@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "New paper: Uncertainty Estimation in the Real World: A Study on Music Emotion Recognition"
-description: published at ECIR 20205
+title:  "new paper: Uncertainty Estimation in the Real World: A Study on Music Emotion Recognition"
+description: published at ECIR 2025
 date:   2025-04-04 21:03:36 +0530
 categories: paper
 ---
