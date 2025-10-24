@@ -7,9 +7,9 @@ categories: paper
 ---
 ![csur teaser image](/img/202509-eval.png)
 
-Npw published in ACM Computing Surveys: [Survey on the Evaluation of Generative Systems in Music](https://doi.org/10.1145/3769106).
+Now published in ACM Computing Surveys: [Survey on the Evaluation of Generative Systems in Music](https://doi.org/10.1145/3769106).
 
-Despite the rapid progress in generative music models, evaluating generative systems remains a major challenge. This comprehensive overview:
+Despite the rapid progress in generative music models, evaluating these systems commonly referred to as music AI remains a major challenge. This comprehensive overview:
 - Outlines key evaluation targets
 - Compares methodologies across studies
 - Discusses metrics and their limitations
