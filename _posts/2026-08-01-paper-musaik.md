@@ -11,7 +11,7 @@ categories: paper
 Generative AI has rapidly transformed the way we create music and other creative artifacts. Yet, behind these impressive advancements lies a fundamental hurdle that the research community has yet to solve: How do we actually evaluate these systems?
 
 #### The Evaluation Crisis in Creative AI
-Right now, the AI field relies heavily on static benchmarks and single-score leaderboards. We often rush to adopt uninterpretable, single-score proxies, such as the Fréchet Audio Distance (FAD), to evaluate highly complex, multidimensional cultural artifacts [(Lerch, 2025)](10.1145/3769106).
+Right now, the AI field relies heavily on static benchmarks and single-score leaderboards. We often rush to adopt uninterpretable, single-score proxies, such as the Fréchet Audio Distance (FAD), to evaluate highly complex, multidimensional cultural artifacts [(Lerch, 2025)](https://doi.org/10.1145/3769106).
 
 But creative AI and music pose unique challenges. Trying to compress musical quality into a single number leads to what I call an evaluation crisis characterized by four systemic failures:  
 - **Validity Failure**: Automated metrics often fail to measure the actual musical or user-facing qualities they are intended to target.  
