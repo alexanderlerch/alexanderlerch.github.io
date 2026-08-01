@@ -10,7 +10,7 @@ categories: paper
 
 Generative AI has rapidly transformed the way we create music and other creative artifacts. Yet, behind these impressive advancements lies a fundamental hurdle that the research community has yet to solve: How do we actually evaluate these systems?
 
-# The Evaluation Crises in Creative AI
+#### The Evaluation Crises in Creative AI
 Right now, the AI field relies heavily on static benchmarks and single-score leaderboards. We often rush to adopt uninterpretable, single-score proxies, such as the Fréchet Audio Distance (FAD), to evaluate highly complex, multidimensional cultural artifacts [(Lerch, 2025)](10.1145/3769106).
 
 But creative AI and music pose unique challenges. Trying to compress musical quality into a single number leads to what I call an evaluation crisis characterized by four systemic failures:  
@@ -19,7 +19,7 @@ But creative AI and music pose unique challenges. Trying to compress musical qua
 - **Comparability Failure**: The use of different datasets, features, and metrics makes cross-paper comparison unreliable.  
 - **Governance Failure**: No shared process exists to update evaluation benchmarks as models and dataset standards evolve. 
 
-# A New Paradigm: Shifting to a Dynamic Ecosystem
+#### A New Paradigm: Shifting to a Dynamic Ecosystem
 To solve this, I propose a paradigm shift from rigid benchmarking to an evolving, multidimensional, and community-governed evaluation ecosystem. Rather than boxing researchers into a single static metric, the proposed framework cleanly decouples three core components: reference data, feature representations, and distance metrics. This modularity ensures the pipeline can easily extend and grow alongside generative models.
 
 The core components of the proposed framework are:
