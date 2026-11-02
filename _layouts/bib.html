@@ -31,7 +31,12 @@
 		bibtex { display: none; }
 		#bibtex_errors { margin-top:10px; color: red;}
 		h1.header {margin-left:8px;}
-		h1.YEAR { font-size: 1.5rem; font-weight: bold; display: inline; margin-left:8px;}
+		.group.year { font-size: 1rem; }
+		h1.YEAR { font-size: 1.5rem; font-weight: bold; margin: 1.6em 0 0.4em; }
+		#bibtex_display ul { margin: 0 0 0.9em; padding-left: 1.2em; }
+		#bibtex_display li, #bibtex_display li > div { line-height: 1.35; }
+		#bibtex_display .title { font-size: 0.95rem; }
+		#bibtex_display a, #bibtex_display a:hover { color: inherit; border-bottom: none; }
     </style>
 </head>
 <body>
@@ -48,7 +53,6 @@
 			{{ content }}
 			<div class="bibtex_structure">
 			  <div class="group year" extra="DESC number">
-				  <div style="padding-bottom:20px;"></div>
 				  <div class="sort journal" extra="DESC string">
 					<div class="templates"></div>
 				  </div>
@@ -68,10 +72,10 @@
 						<span class="title"></span>,
 					</span>
 				  </span>
-				  <div style="line-height: 1.1em;" class="if author">
+				  <div class="if author">
 					<span class="author"></span>,
 				  </div>
-				  <div style="line-height: 1.1em;">
+				  <div>
 					<span class="if journal"><em><span class="journal"></span></em>,</span>
 					<span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
 					<span class="if editor"><span class="editor"></span> (editors),</span>
