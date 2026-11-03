@@ -3,7 +3,7 @@ layout: page
 ---
 
 <img align="left" style="float: left; margin-left: 0px; margin-right: 10px;" src="/img/lerch.JPG" alt="photo of alexander lerch" width="180"/>
-[Alexander Lerch](https://www.linkedin.com/lerch) is Associate Dean for Research and Creative Practice at the College of Design and Professor of Music Technology at the [School of Music](https://music.gatech.edu), Georgia Institute of Technology. His research focuses on design and implementation of novel machine learning and signal processing approaches for music and audio.
+[Alexander Lerch](https://www.linkedin.com/lerch) is Professor of Music Technology at the [School of Music](https://music.gatech.edu) and Associate Dean for Research and Creative Practice at the College of Design, Georgia Institute of Technology. His research focuses on design and implementation of novel machine learning and signal processing approaches for music and audio.
 
 Lerch studied Electrical Engineering at the Berlin Institute of Technology and Tonmeister (music production) at the University of Arts, Berlin; he received his PhD (Audio Communications) from the Berlin Institute of Technology in the year 2008. He co-founded the company [zplane.development](https://www.zplane.de), an industry leader providing advanced music technology to the music industry. zplane technologies are nowadays used by millions of musicians and producers world-wide in a wide variety of products. In 2013, Lerch joined the Georgia Institute of Technology, where he leads the [Music Informatics Group](http://www.musicinformatics.org).
 
