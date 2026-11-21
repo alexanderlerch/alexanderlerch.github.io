@@ -99,6 +99,13 @@ header {
 					color: $gray;
 				}
 			}
+			// ORCID has no fontello glyph; size the inline SVG like the font icons
+			.icon-orcid svg {
+				width: 0.86em;
+				height: 0.86em;
+				margin: 0 .2em 0 .1em;
+				vertical-align: -0.17em;
+			}
 		}
 	}
 }
