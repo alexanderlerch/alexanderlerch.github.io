@@ -61,9 +61,12 @@ figcaption {
 
 header {
 	// background-size: cover;
-	padding: 120px 0;
+	padding: 90px 0 40px;
 	color: #fff;
 	overflow: hidden;
+	@media screen and (max-width: $mobileWidth) {
+		padding-top: 10px;
+	}
 	.tagline {
 		font-weight: normal;
 		font-size: 110%;
@@ -271,6 +274,17 @@ header {
 			&.active {
 				background-color: rgba(#fff, 0.15);
 			}
+		}
+	}
+	// on phones, put the menu above the title instead of overlapping it
+	@media screen and (max-width: $mobileWidth) {
+		position: static;
+		ul {
+			padding: 0;
+			margin: 0 0 20px;
+		}
+		a {
+			padding: 8px 14px;
 		}
 	}
 }

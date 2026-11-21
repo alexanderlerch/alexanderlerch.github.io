@@ -15,7 +15,7 @@ permalink: /posts/:title/
 
 texture:
   title: alexander lerch
-  tagline: audio content analysis
+  tagline: music intelligence & audio content analysis
   date_format: "%b %-d, %Y"
   style: blue
   showNav: true
