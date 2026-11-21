@@ -1,8 +1,11 @@
 title: alexander lerch
 author: alexander lerch
 email: info@audiocontentanalysis.org
+tagline: Professor of Music Technology at Georgia Tech
 description: > # this means to ignore newlines until "show_exerpts:"
-  personal blog
+  Alexander Lerch is Professor of Music Technology at Georgia Tech. His research
+  focuses on machine learning and signal processing for music and audio, music
+  information retrieval, and audio content analysis.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 sass:
@@ -33,12 +36,12 @@ texture:
     rss: rss
     
 
-domain: "alexanderlerch.github.io"
+url: "https://www.alexanderlerch.com"
 baseurl: ""
 
 author:
   name: alexander lerch
-  url: http://www.alexanderlerch.com/
+  url: https://www.alexanderlerch.com/
 
 plugins:
   - jekyll-seo-tag

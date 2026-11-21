@@ -1,5 +1,8 @@
 ---
 layout: page
+title: about
+description: Bio of Alexander Lerch, Professor of Music Technology and Associate Dean for Research and Creative Practice at Georgia Tech, co-founder of zplane.development, and author of An Introduction to Audio Content Analysis.
+image: /img/lerch.JPG
 ---
 
 <img align="left" style="float: left; margin-left: 0px; margin-right: 10px;" src="/img/lerch.JPG" alt="photo of alexander lerch" width="180"/>

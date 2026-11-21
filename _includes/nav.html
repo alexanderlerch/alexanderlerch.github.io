@@ -2,7 +2,10 @@
 <nav class="navbar" aria-label="main">
 	<ul>
 		{% for link in site.texture.navigation %}
-		<li{% if link.url == page.url %} class="active"{% endif %}><a href="{{ link.url | prepend:site.baseurl }}"{% if link.url == page.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
+		{%- assign link_dir = link.url | append: "/" %}
+		{%- assign is_current = false %}
+		{%- if link.url == page.url or link_dir == page.url %}{% assign is_current = true %}{% endif %}
+		<li{% if is_current %} class="active"{% endif %}><a href="{{ link.url | prepend:site.baseurl }}"{% if is_current %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
 		{% endfor %}
 	</ul>
 </nav>
