@@ -64,12 +64,15 @@ header {
 	padding: 120px 0;
 	color: #fff;
 	overflow: hidden;
-	h2 {
+	.tagline {
 		font-weight: normal;
 		font-size: 110%;
 		margin-top: 5px;
 	}
-	h1 {
+	.site-title {
+		@include fluidType(36px, 48px);
+		font-weight: bold;
+		line-height: 1.2em;
 		margin: 0;
 	}
 
@@ -167,6 +170,7 @@ header {
 
 .post-description {
 	font-weight: normal;
+	@include fluidType(18px, 20px);
 	color: #ddd;
 
 	margin-top:.5em;

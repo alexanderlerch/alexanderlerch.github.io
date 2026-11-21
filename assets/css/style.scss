@@ -55,7 +55,7 @@
 .texture-black {
     background-image: url('{{ site.baseurl }}/assets/textures/black.jpg');
 
-    h2 {
+    .tagline {
         color: #999;
     }
 }
@@ -63,7 +63,7 @@
 .texture-blue {
     background-image: url('{{ site.baseurl }}/assets/textures/blue.jpg');
 
-    h2 {
+    .tagline {
         color: #ddd;
     }
 
@@ -94,7 +94,7 @@
 
 .texture-red,
 .texture-purple {
-    h2 {
+    .tagline {
         color: #ccc;
     }
 

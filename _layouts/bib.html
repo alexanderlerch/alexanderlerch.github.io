@@ -32,7 +32,7 @@
 		#bibtex_errors { margin-top:10px; color: red;}
 		h1.header {margin-left:8px;}
 		.group.year { font-size: 1rem; }
-		h1.YEAR { font-size: 1.5rem; font-weight: bold; margin: 1.6em 0 0.4em; }
+		#bibtex_display h2.YEAR { font-size: 1.5rem; font-weight: bold; margin: 1.6em 0 0.4em; }
 		#bibtex_display ul { margin: 0 0 0.9em; padding-left: 1.2em; }
 		#bibtex_display li, #bibtex_display li > div { line-height: 1.35; }
 		#bibtex_display .title { font-size: 0.95rem; }
@@ -43,7 +43,7 @@
 		<div class="container">
 			{%- include nav.html -%}
 		</div>
-		{%- include page_header.html -%}	
+		{%- include page_header.html title_tag="p" -%}	
 	</header>
 	<main>
 		<div id="bibtex_errors"></div>
@@ -52,6 +52,7 @@
 			{{ content }}
 			<div class="bibtex_structure">
 			  <div class="group year" extra="DESC number">
+				  <h2 class="title YEAR"></h2>
 				  <div class="sort journal" extra="DESC string">
 					<div class="templates"></div>
 				  </div>

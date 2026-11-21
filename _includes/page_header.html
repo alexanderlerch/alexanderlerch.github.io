@@ -1,6 +1,7 @@
 <div class="container">
-	<h1>{{ site.texture.title }}</h1>
-	<h2>{{ site.texture.tagline }}</h2>
+	{%- assign title_tag = include.title_tag | default: "h1" %}
+	<{{ title_tag }} class="site-title">{{ site.texture.title }}</{{ title_tag }}>
+	<p class="tagline">{{ site.texture.tagline }}</p>
 	<ul class="social">
 		{%- if site.texture.social_links.github -%}
 			<li><a href="https://github.com/{{ site.texture.social_links.github }}" aria-label="GitHub"><i class="icon-github-circled" aria-hidden="true"></i></a></li>
