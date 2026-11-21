@@ -2,40 +2,11 @@
 <html lang="en">
 <head>
 	{%- include head.html -%}
-	<meta http-equiv="cache-control" content="no-cache" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
-	<bibtex src="/bib/lerch.bib"></bibtex>
-
-    <script>
-		$(function() {
-		  $("#Fontselector").on("change",function() {
-		    var font = $("#Fontselector option:selected").text();
-		    console.log(font);
-		
-		    $('.title.fonters').each(function() {
-		    	$(this).css("font-family",font);
-		    });
-		  }); 
-		});   
-		function reset() {
-			$("select").each(function () {
-			  localStorage.setItem($(this).attr("id"),"");
-			  $(this).val("");
-			}); 
-			$("#searchbar").val("");
-			$("#searchbar").trigger('change');
-		}
-    </script>
     <style>
-		bibtex { display: none; }
-		#bibtex_errors { margin-top:10px; color: red;}
-		h1.header {margin-left:8px;}
-		.group.year { font-size: 1rem; }
-		#bibtex_display h2.YEAR { font-size: 1.5rem; font-weight: bold; margin: 1.6em 0 0.4em; }
-		#bibtex_display ul { margin: 0 0 0.9em; padding-left: 1.2em; }
-		#bibtex_display li, #bibtex_display li > div { line-height: 1.35; }
-		#bibtex_display .title { font-size: 0.95rem; }
+		.publications h2 { font-size: 1.5rem; font-weight: bold; margin: 1.6em 0 0.4em; }
+		.publications ul { margin: 0; padding-left: 1.2em; }
+		.publications li { font-size: 0.95rem; line-height: 1.35; margin-bottom: 0.9em; }
+		.publications .pub-meta { font-size: 0.75rem; }
     </style>
 </head>
 <body>
@@ -43,62 +14,44 @@
 		<div class="container">
 			{%- include nav.html -%}
 		</div>
-		{%- include page_header.html title_tag="p" -%}	
+		{%- include page_header.html title_tag="p" -%}
 	</header>
 	<main>
-		<div id="bibtex_errors"></div>
 		<div class="container">
 			<h1>publications</h1>
 			{{ content }}
-			<div class="bibtex_structure">
-			  <div class="group year" extra="DESC number">
-				  <h2 class="title YEAR"></h2>
-				  <div class="sort journal" extra="DESC string">
-					<div class="templates"></div>
-				  </div>
-			  </div>
+			<!-- generated from bib/lerch.bib by scripts/bib2json.py -->
+			<div class="publications">
+			{%- for group in site.data.publications %}
+				<h2 id="{{ group.year }}">{{ group.year }}</h2>
+				<ul>
+				{%- for pub in group.publications %}
+					<li>
+						<span class="pub-title">
+							{%- if pub.url %}<a href="{{ pub.url | escape }}">{{ pub.title | escape }}</a>{% else %}{{ pub.title | escape }}{% endif -%}
+						</span>,
+						{%- if pub.author %}
+						<div class="pub-meta">{{ pub.author | escape }},</div>
+						{%- endif %}
+						<div class="pub-meta">
+							{%- if pub.journal %} <em>{{ pub.journal | escape }}</em>,{% endif %}
+							{%- if pub.booktitle %} In <em>{{ pub.booktitle | escape }}</em>,{% endif %}
+							{%- if pub.editor %} {{ pub.editor | escape }} (editors),{% endif %}
+							{%- if pub.publisher %} <em>{{ pub.publisher | escape }}</em>,{% endif %}
+							{%- if pub.institution %} {{ pub.institution | escape }},{% endif %}
+							{%- if pub.address %} {{ pub.address | escape }},{% endif %}
+							{%- if pub.volume %} {{ pub.volume | escape }}{% if pub.journal and pub.number %}({{ pub.number | escape }}){% endif %},{% endif %}
+							{%- if pub.pages %} pages {{ pub.pages | escape }},{% endif %}
+							{%- if pub.month %} {{ pub.month | escape }},{% endif %}
+							{{ pub.year }}.
+						</div>
+					</li>
+				{%- endfor %}
+				</ul>
+			{%- endfor %}
 			</div>
-
-			<div id="bibtex_display">
-
-			  <div class="if bibtex_template" style="display: none;">
-				<ul> <li>
-				  <span class="if title">
-					<!-- <span class="if url"><a class="bibtexVar" href="+URL+" extra="URL"><span style="text-decoration: underline;" class="title"></span></a>, -->
-					<span class="if url">
-						<a class="bibtexVar" href="+URL+" extra="URL"><span class="title"></span></a>,
-					</span>
-					<span class="if !url">
-						<span class="title"></span>,
-					</span>
-				  </span>
-				  <div class="if author">
-					<span class="author"></span>,
-				  </div>
-				  <div>
-					<span class="if journal"><em><span class="journal"></span></em>,</span>
-					<span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
-					<span class="if editor"><span class="editor"></span> (editors),</span>
-					<span class="if publisher"><em><span class="publisher"></span></em>,</span>
-					<span class="if institution"><span class="institution"></span>,</span>
-					<span class="if address"><span class="address"></span>,</span>
-					<span class="if volume"><span class="volume"></span>,</span>
-					<span class="if journal number">(<span class="number"></span>),</span>
-					<span class="if pages"> pages <span class="pages"></span>,</span>
-					<span class="if month"><span class="month"></span>,</span>
-					<span class="if year"><span class="year"></span>.</span>
-					<!-- 
-					<span class="if date"><span class="year"></span>.</span> -->
-				  </div>
-				</li></ul>
-			  </div>
-			  
-			</div>		
 		</div>
 	</main>
 	{%- include footer.html -%}
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 </body>
 </html>

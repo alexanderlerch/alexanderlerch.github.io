@@ -67,7 +67,8 @@ header {
 	.tagline {
 		font-weight: normal;
 		font-size: 110%;
-		margin-top: 5px;
+		line-height: 1.2em;
+		margin: 5px 0 0.83em;
 	}
 	.site-title {
 		@include fluidType(36px, 48px);

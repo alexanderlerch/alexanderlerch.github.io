@@ -47,4 +47,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap 
 
-
+exclude: # replaces Jekyll's default list, so the defaults are repeated here
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - texture.gemspec
+  - vendor
+  - .bundle
+  - node_modules
